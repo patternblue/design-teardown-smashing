@@ -22,6 +22,7 @@
 [class*='col-'] {
   /*padding-right: 20px;*/
   float: left;
+  /*height: 100%;*/
 }
 [class*='col-']:last-of-type {
   /*padding-right: 0;*/
@@ -38,13 +39,16 @@
 	width: 33.33%;	
 }
 
+body{
+	background: #eee;
+}
 header{
 	position: absolute;
 	height: 75px;
 	width: 99%;
 	right: 0;
 	top: 0;
-	background: #eee;
+	/*background: #eee;*/
 }
 .logo{
 	background: #333;
@@ -53,6 +57,7 @@ header{
 	height: 100%;
 }
 #main{
+	/*background: #fff;*/
 	margin-top: 75px;
 	position: relative;
 }
@@ -60,19 +65,23 @@ header{
 	width: 100%;
 }*/
 #nav{
+	background: #fff;
 	padding-top: 60px;
+	/*height: 100%;*/
 }
 #nav ul{
 	padding: 0 40px 40px 40px;
 }
 #nav h3{
-	background: #444;
-	width: 40%;
+	color: #444;
+	/*background: #444;*/
+	/*width: 40%;*/
 	height: 20px;
 }
 #nav li{
-	background: #bbb;
-	width: 60%;
+	color: #bbb;
+	/*background: #bbb;*/
+	/*width: 60%;*/
 	height: 20px;
 	margin: 20px 0;
 }
@@ -81,32 +90,40 @@ header{
 	padding: 60px 40px 40px 40px;
 }
 
-/*.article-header{
-
-}*/
+#articles{
+	background: #fff;
+}
 
 #articles h1{
-	background: #000;
-	height: 80px;
-	width: 80%;
+	color: #000;
+	/*background: #000;*/
+	/*height: 80px;*/
+	font-size: 36px;
+	/*width: 80%;*/
 }
 #articles h2{
-	background: #999;
-	width: 20%;
-	height: 40px;
+	color: #999;
+	/*background: #999;*/
+	/*width: 20%;*/
+	font-size: 26px;
+	/*height: 40px;*/
+
 	margin: 20px 0;
 }
 .article-meta{
-	background: #ddd;
+	color: #aaa;
+	/*background: #ddd;*/
 	width: 75%;
-	height: 30px;
+	/*height: 30px;*/
+	font-size: 20px;
 	margin-bottom: 60px;
 	border-top: 5px solid #eee;
 }
 .article-text{
-	background: #666;
+	color: #666;
+	/*background: #666;*/
 	width: 85%;	
-	height: 100px;
+	/*height: 100px;*/
 }
 
 .article-image{
@@ -123,10 +140,16 @@ header{
 	margin: 60px 0;
 }
 #sidebar{
-	background: #eee;	
+	/*background: #eee;	*/
+
 }
 #sidebar .alt1{
 	padding: 0 20px;
+}
+#sidebar .alt2{
+	/*padding: 0 20px;*/
+	background: #fff;
+	margin: 20px 0;
 }
 .search{
 	background: #fff;
@@ -145,13 +168,26 @@ header{
 #sidebar .ad{
 	background: #222;
 	height: 80px;
+	margin: 10px 0;
 }
 #sidebar .col-1-1{
 	width: 100%;
 	margin-top: 50px;
-	margin-bottom: 20px;
+	/*margin-bottom: 10px;*/
 }
-.grid .ad{
-	margin: 10px 10px 10px 0;
+.grid .col-1-2:first-child{
+	padding-right: 10px;
+}
+.grid .col-1-2:last-child{
+	padding-left: 10px;
 }
 
+.subscribe{
+	height: 200px;
+}
+.more-books{
+	height: 200px;
+}
+footer{
+	background: #eee;
+}
